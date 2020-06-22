@@ -1,5 +1,5 @@
-batch_size: 512
-epochs: 80
+batch_size: 8
+epochs: 11
 eval_every_n_epochs: 1
 fine_tune_from: None
 log_every_n_steps: 50
@@ -12,9 +12,9 @@ model:
 
 dataset:
   s: 1
-  input_shape: (96,96,3)
+  input_shape: (512,512,3)
   num_workers: 0
-  valid_size: 0.05
+  valid_size: 0.4
 
 loss:
   temperature: 0.5
